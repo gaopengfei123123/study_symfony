@@ -1,0 +1,10 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+blog_show:
+    path:      /blog/{slug}
+    defaults:  { _controller: AppBundle:Lucky:show ,slug:2333}
+
+blog:
+    path:      /blog/{str}
+    defaults:  { _controller: AppBundle:Lucky:test ,str:2333}
