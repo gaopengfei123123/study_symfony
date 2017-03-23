@@ -1,3 +1,8 @@
+acer_test:
+    resource: "@AcerTestBundle/Controller/"
+    type:     annotation
+    prefix:   /acer
+
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
@@ -8,3 +13,6 @@ blog_show:
 blog:
     path:      /blog/{str}
     defaults:  { _controller: AppBundle:Lucky:test ,str:2333}
+gao:
+    path:      /test
+    defaults:  { _controller: GaoBundle:Test:hello}
